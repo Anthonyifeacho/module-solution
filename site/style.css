@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    transition: 300ms ease;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.row{
+    margin: 0 auto;
+}
+
+p{
+    border: 1px solid black;
+    background-color: darkcyan;
+    width: 31%;
+    height: 144px;
+    margin: 1.1%;
+    font-family: Helvetica;
+    color: white;
+    float: left;
+    padding: 16px;
+    position: relative;
+}
+
+span{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    border: 1px solid black;
+    border-right: 0px;
+    border-top: 0px;
+    padding: 0 32px;
+}
+
+.chicken{
+    background-color: red;
+}
+.beef{
+    background-color: blue;
+}
+.sushi{
+    background-color: purple;
+}
+/* Desktop */
+@media (min-width: 992px){
+    p{
+        width: 31%;
+        overflow: auto;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width:991px){
+    .p1, .p2{
+        width: 45%;
+        margin: 2.5%;
+        overflow: auto;
+    }
+    
+    .p3{
+        width: 95%;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+        overflow: auto;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width: 767px){
+    p{
+        width: 95%;
+        margin: 2.5%;
+
+    }
+}
