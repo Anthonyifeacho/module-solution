@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Oxygen:wght@300;400;700&family=Roboto:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    transition: 300ms ease;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-style: 16px;
+    color: black;
+    background-color: white ;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* HEADER */
+
+
+
+#header-nav{
+    background-color: darkcyan;
+    border-radius: 0;
+    border: 0;
+}
+
+
+#logo-img{
+    width: 150px;
+    height: 150px;
+    margin: 10% 5px 0;
+}
+
+
+
+
+.navbar-brand h1{
+    font-family: 'Lora', serif;
+    color: white;
+    font-size: 1.9em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin: 40% 0;
+    line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+}
+
+.navbar-brand p{
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+}
+
+
+.navbar-toggle{
+    margin: 5%;
+}
+
+#collapsable-nav{
+    width: 100%;
+
+}
+
+#nav-list{
+    margin: 5% 0;
+}
+
+#nav-list a {
+    color: white;
+    text-align: center;
+  }
+#nav-list a:hover {
+background: #E7E7E7;
+}
+#nav-list a {
+font-size: 1.4em;
+}
+
+
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+clear: both;
+margin-top: -30px;
+}
+/* END HEADER */
+
+/* BODY */
+
+.h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container .row{
+    margin: 0 auto;
+}
+
+.p1, .p2, .p3 {
+    border: 1px solid black;
+    background-color: darkcyan;
+    width: 31%;
+    height: 100%;
+    margin: 1.1%;
+    font-family: Helvetica;
+    color: white;
+    float: left;
+    padding: 16px;
+    position: relative;
+    overflow: auto;
+}
+
+.chicken, .beef, .sushi{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    border: 1px solid black;
+    border-right: 0px;
+    border-top: 0px;
+    padding: 0 32px;
+}
+
+.chicken{
+    background-color: red;
+}
+.beef{
+    background-color: blue;
+}
+.sushi{
+    background-color: purple;
+}
+
+
+
+  
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+    
+}
+  
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Header */
+    #logo-img {
+    width: 100px;
+    height: 100px;
+    margin: 30% 5px 0;
+    }
+
+    .navbar-brand h1{
+        margin: 27.5% 0;
+    }
+    /* End Header */
+
+    @media (min-width: 992px){
+        .p1, .p2, .p3{
+            width: 31%;
+            overflow: auto;
+        }
+    }
+
+    
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-brand h1{
+        margin: 25% 0;
+    }
+
+    .p1, .p2{
+        width: 45%;
+        margin: 2.5%;
+        overflow: auto;
+    }
+    
+    .p3{
+        width: 95%;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+        overflow: auto;
+    }
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    /* Header */
+    .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+    }
+    .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+    margin: 5% 0;
+    }
+    
+
+    #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    }
+    .fa-solid { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+    color: #fff;
+    }
+
+    #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    }
+    #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    }
+
+    .p1, .p2, .p3{
+        width: 95%;
+        margin: 2.5%;
+
+    }
+    /* End Header */
+
+    
+}
+    
+
+/********** Super small devices only **********/
+@media (max-width: 479px){
+    .navbar-brand h1{
+        margin: 5% 0;
+        font-size: 6vw;
+    }
+
+    .col-xxs-12{
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
+    }
+}
+
+
+  
